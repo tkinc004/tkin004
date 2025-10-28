@@ -10,24 +10,28 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
   inputs:
-  name: ambiente
-  type: environment
+     ambiente:
+       type: environment
 
   name: Nome
-  default: Vieira
+     default: Vieira
+        required: true
 
-  name: Apelido
-  default:  Danho
+   Apelido:
+      default:  Danho
+        requered: true
 
-  nome: Confirme
-  type: boolearn
+  opção:
+   type: boolearn
+     description: Confirme a execução!
 
-  name: Cidade
-  type: choise
+  Cidade:
+    type: choise
   - Braga
   - Lisboa
   - Porto
   - Coimbra
+  options:
   
 
   
